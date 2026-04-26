@@ -27,6 +27,7 @@
 Built as a **final project** after completing a Web Development course at **Incapp - IT Training Company**.
 
 The website helps users:
+
 - 🏡 Find dream homes across Delhi NCR
 - 📍 Explore top localities like Noida, Gurgaon, Greater Noida
 - 📞 Contact agents directly via Call or WhatsApp
@@ -51,10 +52,9 @@ The website helps users:
 - ✅ Newsletter Subscription
 - ✅ Toast Notification System
 - ✅ Success Modal after Form Submission
-- ✅ Property Requirement Cards with Hover Effects
 - ✅ Popular Localities Section
 - ✅ Why Choose Us Section
-- ✅ Testimonials from Real Clients
+- ✅ Testimonials Section
 
 ---
 
@@ -74,31 +74,29 @@ The website helps users:
 ---
 
 ## 📁 Project Structure
-Homyz/
-│
-├── 📄 index.html # Main HTML file
-├── 🎨 style.css # All styling & animations
-├── ⚙️ script.js # All JavaScript & interactions
-│
-└── 📂 assets/ # Images folder
-│
-├── 🖼️ banner.jpg # Hero section background
-├── 🖼️ logo.jpg # Website logo
-├── 🖼️ home1.jpg # Property image 1
-├── 🖼️ home2.jpg # Property image 2
-├── 🖼️ home3.jpg # Property image 3
-├── 🖼️ home4.jpg # Property image 4
-├── 🖼️ home5.jpg # Property image 5
-├── 🖼️ home6.jpg # Property image 6
-├── 🖼️ home7.jpg # Property image 7
-├── 🖼️ home8.jpg # Property image 8
-├── 🖼️ home9.jpg # Property image 9
-├── 🖼️ home10.jpg # Property image 10
-├── 🖼️ home11.jpg # Property image 11
-└── 🖼️ home12.jpg # Property image 12
 
-text
-
+    Homyz/
+    │
+    ├── 📄 index.html         → Main HTML file
+    ├── 🎨 style.css          → All styling & animations
+    ├── ⚙️ script.js          → All JavaScript & interactions
+    │
+    └── 📂 assets/            → Images folder
+        │
+        ├── 🖼️ banner.jpg     → Hero section background
+        ├── 🖼️ logo.jpg       → Website logo
+        ├── 🖼️ home1.jpg      → Property image 1
+        ├── 🖼️ home2.jpg      → Property image 2
+        ├── 🖼️ home3.jpg      → Property image 3
+        ├── 🖼️ home4.jpg      → Property image 4
+        ├── 🖼️ home5.jpg      → Property image 5
+        ├── 🖼️ home6.jpg      → Property image 6
+        ├── 🖼️ home7.jpg      → Property image 7
+        ├── 🖼️ home8.jpg      → Property image 8
+        ├── 🖼️ home9.jpg      → Property image 9
+        ├── 🖼️ home10.jpg     → Property image 10
+        ├── 🖼️ home11.jpg     → Property image 11
+        └── 🖼️ home12.jpg     → Property image 12
 
 ---
 
@@ -131,55 +129,73 @@ text
 ## 🚀 How to Run Locally
 
 **Step 1 — Clone the repository**
-```bash
-git clone https://github.com/shudanshubora1410/Homyz.git
-Step 2 — Open the folder
 
-Bash
+    git clone https://github.com/shudanshubora1410/Homyz.git
 
-cd Homyz
-Step 3 — Open in your browser
+**Step 2 — Open the folder**
 
-text
+    cd Homyz
 
-Simply open index.html in any browser
-No server or installation needed!
-📞 Contact & Support
-Platform	Details
-📧 Email	sambora1405@gmail.com
-📱 Phone	+91 99786 48457
-💬 WhatsApp	Chat Now
-🐙 GitHub	@shudanshubora1410
-🎓 About The Training
-text
+**Step 3 — Open in your browser**
 
-Course    : Web Development
-Institute : Incapp - IT Training Company
-Student   : Shudanshu Sanjay Bora
-Degree    : B.Tech Information Technology (3rd Year)
-Project   : Homyz - Real Estate Website (Final Project)
-📄 License
-text
+    Simply open index.html in any browser
+    No server or installation needed!
 
-MIT License
+---
+
+## 📞 Contact & Support
+
+| Platform | Details |
+|----------|---------|
+| 📧 **Email** | [sambora1405@gmail.com](mailto:sambora1405@gmail.com) |
+| 📱 **Phone** | [+91 99786 48457](tel:+919978648457) |
+| 💬 **WhatsApp** | [Chat Now](https://wa.me/919978648457) |
+| 🐙 **GitHub** | [@shudanshubora1410](https://github.com/shudanshubora1410) |
+
+---
+
+## 🎓 About The Training
+
+| Detail | Info |
+|--------|------|
+| 🏫 **Institute** | Incapp - IT Training Company |
+| 📚 **Course** | Web Development |
+| 👤 **Student** | Shudanshu Sanjay Bora |
+| 🎓 **Degree** | B.Tech Information Technology (3rd Year) |
+| 💻 **Project** | Homyz - Real Estate Website (Final Project) |
+
+---
+
+## 📄 License
+
+**MIT License**
 Copyright (c) 2024 Shudanshu Sanjay Bora
 Free to use with proper credit!
-🌟 Support
+
+---
+
+## 🌟 Support
+
 If you like this project please consider:
 
-⭐ Starring this repository
-🍴 Forking it for your own use
-📢 Sharing it with others
+- ⭐ **Starring** this repository
+- 🍴 **Forking** it for your own use
+- 📢 **Sharing** it with others
+
+---
+
 <div align="center">
-🏠 Homyz — Find Your Dream Home in Delhi NCR
-Made with Love
-HTML CSS JS
-GitHub Pages
 
-Made with ❤️ by Shudanshu Sanjay Bora
+### 🏠 Homyz — Find Your Dream Home in Delhi NCR
 
-Incapp - IT Training Company | B.Tech IT | 3rd Year
+![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)
+![HTML CSS JS](https://img.shields.io/badge/HTML-CSS-JS-orange?style=for-the-badge)
+![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=for-the-badge)
 
-🌐 Visit Live Site • 📧 Email Me • 💬 WhatsApp
+**Made with ❤️ by Shudanshu Sanjay Bora**
 
-</div> ```
+*Incapp - IT Training Company • B.Tech IT • 3rd Year*
+
+[🌐 Visit Live Site](https://shudanshubora1410.github.io/Homyz) • [📧 Email Me](mailto:sambora1405@gmail.com) • [💬 WhatsApp](https://wa.me/919978648457)
+
+</div>
