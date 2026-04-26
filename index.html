@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homyz — Find Your Dream Home in Delhi NCR</title>
+    <meta name="description" content="Homyz - Your trusted real estate partner in Delhi NCR. Find premium properties in Noida, Gurgaon, Greater Noida & more.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="house-icon">
+                <i class="bi bi-house-heart-fill"></i>
+            </div>
+            <p>Homyz</p>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-house-door-fill"></i> Ho<span>myz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="tel:+919978648457" class="btn btn-primary-custom ms-lg-3">
+                    <i class="bi bi-telephone-fill"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container position-relative z-3">
+            <div class="row align-items-center hero-row">
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+                    <span class="hero-badge">
+                        <i class="bi bi-star-fill"></i> #1 Real Estate Platform in Delhi NCR
+                    </span>
+                    <h1 class="hero-title">
+                        Find Your <span class="gradient-text">Dream Home</span> in Delhi NCR
+                    </h1>
+                    <p class="hero-subtitle">
+                        Discover premium properties across Noida, Gurgaon, Greater Noida, Faridabad & Delhi.
+                        We make your dream of owning the perfect home a reality.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#properties" class="btn btn-primary-custom btn-lg me-2 mb-2">
+                            <i class="bi bi-search"></i> Explore Properties
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="bi bi-play-circle"></i> Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="counter" data-target="500">0</h3>
+                            <p>Properties Sold</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="counter" data-target="200">0</h3>
+                            <p>Happy Families</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                            <h3 class="counter" data-target="15">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT - SEARCH CARD -->
+                <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="hero-search-card">
+                        <h4><i class="bi bi-search"></i> Find Your Property</h4>
+                        <div class="search-tabs">
+                            <button class="tab-btn active" data-tab="buy">Buy</button>
+                            <button class="tab-btn" data-tab="rent">Rent</button>
+                            <button class="tab-btn" data-tab="sell">Sell</button>
+                        </div>
+                        <form id="searchForm">
+                            <div class="mb-3">
+                                <label><i class="bi bi-geo-alt"></i> Location</label>
+                                <select class="form-select">
+                                    <option>Select Location</option>
+                                    <option>Noida</option>
+                                    <option>Greater Noida</option>
+                                    <option>Gurgaon (Gurugram)</option>
+                                    <option>Faridabad</option>
+                                    <option>Ghaziabad</option>
+                                    <option>South Delhi</option>
+                                    <option>Dwarka, Delhi</option>
+                                    <option>Rohini, Delhi</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label><i class="bi bi-house"></i> Property Type</label>
+                                <select class="form-select">
+                                    <option>Select Type</option>
+                                    <option>Flat / Apartment</option>
+                                    <option>Independent House</option>
+                                    <option>Villa</option>
+                                    <option>Builder Floor</option>
+                                    <option>Plot / Land</option>
+                                    <option>Penthouse</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label><i class="bi bi-currency-rupee"></i> Budget Range</label>
+                                <select class="form-select">
+                                    <option>Select Budget</option>
+                                    <option>₹20 Lakh - ₹50 Lakh</option>
+                                    <option>₹50 Lakh - ₹1 Crore</option>
+                                    <option>₹1 Crore - ₹2 Crore</option>
+                                    <option>₹2 Crore - ₹5 Crore</option>
+                                    <option>₹5 Crore+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100 btn-lg">
+                                <i class="bi bi-search"></i> Search Properties
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <a href="#p-req">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ========== PROPERTY REQUIREMENTS ========== -->
+    <section id="p-req" class="requirements-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">What We Offer</span>
+                    <h2 class="section-title">Property <span class="gradient-text">Requirements</span></h2>
+                    <p class="section-subtitle">We cater to all your real estate needs across Delhi NCR</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center" id="requirementCards">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- ABOUT IMAGES -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-images-wrapper">
+                        <div class="about-img-primary">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Luxury Home">
+                        </div>
+                        <div class="about-img-secondary">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Modern Home">
+                        </div>
+                        <div class="experience-badge">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ABOUT CONTENT -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="section-badge">About Homyz</span>
+                    <h2 class="section-title">Your Trusted <span class="gradient-text">Real Estate</span> Partner</h2>
+                    <p class="text-muted mt-3">
+                        With over 15 years of experience in Delhi NCR real estate market, Homyz has helped thousands of families
+                        find their dream homes. From luxurious villas in Gurgaon to modern apartments in Noida, we cover every
+                        corner of the National Capital Region.
+                    </p>
+                    <p class="text-muted">
+                        Our team of dedicated professionals understands the local market inside out. Whether you're a first-time
+                        buyer or a seasoned investor, we ensure your property journey is smooth, transparent, and successful.
+                    </p>
+                    <div class="about-features mt-4">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div>
+                                <h5>RERA Verified Properties</h5>
+                                <p>All our listed properties are RERA registered and legally verified.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div>
+                                <h5>Best Market Value</h5>
+                                <p>Get the best deals and competitive prices in Delhi NCR market.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div>
+                                <h5>24/7 Support</h5>
+                                <p>Our support team is available round the clock to assist you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary-custom mt-4" data-aos="fade-up" data-aos-delay="400">
+                        Contact Us <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section id="why-us" class="why-us-section bg-navy-blue">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge-light">Why Choose Homyz</span>
+                    <h2 class="section-title text-white">Why Families <span class="gradient-text">Trust Us</span></h2>
+                    <p class="text-white-50">Here's what sets us apart from other real estate platforms</p>
+                </div>
+            </div>
+            <div class="row g-4" id="whyUsGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROPERTIES SECTION ========== -->
+    <section id="properties" class="properties-section bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">Our Properties</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Properties</span></h2>
+                    <p class="section-subtitle">Explore hand-picked premium properties across Delhi NCR</p>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="penthouse">Penthouses</button>
+            </div>
+
+            <div class="row g-4" id="propertyGrid">
+                <!-- Injected by JS -->
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#contact" class="btn btn-primary-custom btn-lg">
+                    View All Properties <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== POPULAR LOCALITIES ========== -->
+    <section id="localities" class="localities-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">Top Localities</span>
+                    <h2 class="section-title">Popular Areas in <span class="gradient-text">Delhi NCR</span></h2>
+                    <p class="section-subtitle">Explore properties in the most sought-after neighborhoods</p>
+                </div>
+            </div>
+            <div class="row g-4" id="localitiesGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="services-section bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">Our Services</span>
+                    <h2 class="section-title">What <span class="gradient-text">We Offer</span></h2>
+                    <p class="section-subtitle">Comprehensive real estate solutions tailored for Delhi NCR</p>
+                </div>
+            </div>
+            <div class="row g-4" id="servicesGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">Testimonials</span>
+                    <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+                    <p class="section-subtitle">Hear from families who found their dream homes with Homyz</p>
+                </div>
+            </div>
+            <div class="row g-4" id="testimonialsGrid">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card" data-aos="zoom-in">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2>Ready to Find Your Dream Home?</h2>
+                        <p>Let Homyz help you make the right choice. Get in touch today!</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+                        <a href="tel:+919978648457" class="btn btn-light btn-lg me-2 mb-2">
+                            <i class="bi bi-telephone-fill"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/919978648457" target="_blank" class="btn btn-success btn-lg mb-2">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <span class="section-badge">Contact Us</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">Have a question? We'd love to hear from you.</p>
+                </div>
+            </div>
+            <div class="row g-4 align-items-start">
+                <!-- CONTACT INFO CARDS -->
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Our Location</h5>
+                                <p>Delhi NCR, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Phone Number</h5>
+                                <p><a href="tel:+919978648457">+91 99786 48457</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Email Address</h5>
+                                <p><a href="mailto:sambora1405@gmail.com">sambora1405@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <p><a href="https://wa.me/919978648457" target="_blank">Chat with us</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT FORM -->
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <h4 class="mb-4"><i class="bi bi-send"></i> Send us a Message</h4>
+                        <form name="google-sheet" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name" required>
+                                        <label for="name"><i class="bi bi-person"></i> Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email" required>
+                                        <label for="email"><i class="bi bi-envelope"></i> Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" name="Phone" placeholder="Your Phone" required>
+                                        <label for="phone"><i class="bi bi-telephone"></i> Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="subject" name="Subject">
+                                            <option value="">Select Subject</option>
+                                            <option>Buy Property</option>
+                                            <option>Sell Property</option>
+                                            <option>Rent Property</option>
+                                            <option>Home Loan Assistance</option>
+                                            <option>Property Valuation</option>
+                                            <option>Site Visit Request</option>
+                                            <option>General Inquiry</option>
+                                        </select>
+                                        <label for="subject"><i class="bi bi-tag"></i> Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="location" name="Location">
+                                            <option value="">Preferred Location</option>
+                                            <option>Noida</option>
+                                            <option>Greater Noida</option>
+                                            <option>Gurgaon (Gurugram)</option>
+                                            <option>Faridabad</option>
+                                            <option>Ghaziabad</option>
+                                            <option>Delhi</option>
+                                        </select>
+                                        <label for="location"><i class="bi bi-geo-alt"></i> Location</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="budget" name="Budget">
+                                            <option value="">Select Budget</option>
+                                            <option>₹20L - ₹50L</option>
+                                            <option>₹50L - ₹1Cr</option>
+                                            <option>₹1Cr - ₹2Cr</option>
+                                            <option>₹2Cr - ₹5Cr</option>
+                                            <option>₹5Cr+</option>
+                                        </select>
+                                        <label for="budget"><i class="bi bi-currency-rupee"></i> Budget</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="Message" placeholder="Your Message" style="height: 130px" required></textarea>
+                                        <label for="message"><i class="bi bi-chat-dots"></i> Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom btn-lg w-100" id="submitBtn">
+                                        <span class="btn-text">
+                                            <i class="bi bi-send-fill"></i> Send Message
+                                        </span>
+                                        <span class="btn-loading d-none">
+                                            <span class="spinner-border spinner-border-sm me-2"></span> Sending...
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAP SECTION ========== -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.52633258!2d76.76357436!3d28.6436846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Homyz Location - Delhi NCR">
+        </iframe>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <a class="footer-brand" href="#">
+                        <i class="bi bi-house-door-fill"></i> Ho<span>myz</span>
+                    </a>
+                    <p class="mt-3 text-light opacity-75">
+                        Your trusted real estate partner in Delhi NCR. We help you find the perfect property
+                        that matches your lifestyle, needs, and budget.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-title">Top Locations</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Noida & Greater Noida</a></li>
+                        <li><a href="#">Gurgaon (Gurugram)</a></li>
+                        <li><a href="#">South Delhi</a></li>
+                        <li><a href="#">Faridabad</a></li>
+                        <li><a href="#">Ghaziabad</a></li>
+                        <li><a href="#">Dwarka, Delhi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="text-light opacity-75">Subscribe for latest property updates in Delhi NCR.</p>
+                    <form class="newsletter-form mt-3" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary-custom" type="submit">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-4">
+                        <p class="text-light opacity-75 mb-1">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:+919978648457" class="text-light">+91 99786 48457</a>
+                        </p>
+                        <p class="text-light opacity-75 mb-0">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:sambora1405@gmail.com" class="text-light">sambora1405@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row py-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-light opacity-50 mb-0">© 2024 Homyz. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-light opacity-50 mb-0">
+                        Made with <i class="bi bi-heart-fill text-danger"></i> by <strong class="text-light">Sam</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <a href="https://wa.me/919978648457?text=Hi%20Homyz!%20I'm%20interested%20in%20a%20property%20in%20Delhi%20NCR."
+       target="_blank"
+       class="whatsapp-float"
+       title="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button id="btn-top" class="btn-back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ========== SUCCESS MODAL ========== -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <div class="success-icon mb-3">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <h4>Message Sent Successfully!</h4>
+                <p class="text-muted">Thanks for contacting Homyz! We'll get back to you within 24 hours.</p>
+                <button class="btn btn-primary-custom" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
